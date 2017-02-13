@@ -1,4 +1,7 @@
-public class Pilot{
+public class Pilot extends Part{
+	/**
+	*	
+	*/
 	
 	public Pilot(){
 		
@@ -8,6 +11,6 @@ public class Pilot{
 		
 	}
 
-	private float failure = 0,005;
+	private float failure = 0.005;
 	
 }

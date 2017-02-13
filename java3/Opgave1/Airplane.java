@@ -18,8 +18,13 @@ public class Airplane{
 		
 	}	
 	
-	private EngineList = new Engine[4];
-	private FlapList = new Flap[2];
-	private PilotList = new Pilot[3];
+	private EngineList[] = new Engine[4];
+	private EngineCheckList[] = new boolean[4];
+	
+	private FlapList[] = new Flap[2];
+	private FlapCheckList[] = new boolean[2];
+	
+	private PilotList[] = new Pilot[3];
+	private PilotCheckList[] = new boolea[3];
 	
 }

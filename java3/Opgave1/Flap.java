@@ -1,4 +1,4 @@
-public class Flap{
+public class Flap extends Part{
 	
 	public Flap(){
 		
@@ -8,5 +8,5 @@ public class Flap{
 		
 	}
 	
-	private float failure = 0,0005;
+	private float failure = 0.0005;
 }
