@@ -4,11 +4,5 @@ public class Engine extends Part{
 		
 	}
 	
-	public void EngineExeption(){
-		try{
-			
-		}
-	}
-	
 	private float failure = 0.001;
 }
