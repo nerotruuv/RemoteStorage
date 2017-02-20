@@ -1,6 +1,7 @@
 1. Bepaal het aantal rangschikkingen van het woord WAARSCHIJNLIJKHEID.
 	18! = 6,4024*10^15
 
+
 2.  Op hoeveel manieren kan uit een verzameling van 100 personen een voorzitter en
 een penningmeester gekozen worden (de functies mogen niet door een persoon vervuld worden)?
 
@@ -16,7 +17,8 @@ een penningmeester gekozen worden (de functies mogen door een persoon vervuld wo
 4.  Op hoeveel manieren kan uit een verzameling van 100 personen twee bestuursleden
 gekozen worden.
 
-	100!/(98!*2!)
+	100!/(98!*2!) = 4950
+
 	
 5.  Hoeveel getallen zijn mogelijk met maximaal 3 verschillende cijfers?
 Er mogen in het getal dus geen twee cijfers hetzelfde zijn.
