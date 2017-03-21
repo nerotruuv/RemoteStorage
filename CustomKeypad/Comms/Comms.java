@@ -7,20 +7,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Comms{ String[] args){
+public class Comms{
 	
 	private String port;
 	
-	public Comms(String poort){
+	public Comms(){
 		super();
-		port = poort;
 		Initialize();
 	} 
 	
 	public void Initialize(){
 		try
         {
-            (new TwoWaySerialComm()).connect("COM3");
+            (new Comms()).connect();
         }
         catch ( Exception e )
         {
@@ -31,7 +30,7 @@ public class Comms{ String[] args){
 	
 	public void connect(){
 		try{
-			CommPortIdentifier portIdentifier = CommPortIdentifier.getPortIdentifier(port);
+			CommPortIdentifier portIdentifier = CommPortIdentifier.getPortIdentifier("COM3");
 			if ( portIdentifier.isCurrentlyOwned() )
 			{
 				System.out.println("Error: Port is currently in use");
@@ -62,8 +61,9 @@ public class Comms{ String[] args){
 		int len = -1;
 		try{
 			if ( ( len = in.read(buffer)) > -1 ){
-				return(new String(buffer,0,len));
-			}
+				return (new String(buffer,0,len));
+			} 
+		
 		}catch ( IOException e ){
 			e.printStackTrace();
 		}            
