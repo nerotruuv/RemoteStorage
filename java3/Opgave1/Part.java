@@ -11,6 +11,7 @@ public abstract class Part(){
 			broken = true;
 		}else{
 			broken = false;
+			
 		}
 	}
 	
