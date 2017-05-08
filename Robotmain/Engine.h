@@ -22,6 +22,9 @@ class Engine
   private:
     StepMotor left;
     StepMotor right;
+    bool busy;
+    int compass; // N,E,S,W = 1,2,3,4
+    int target
     int currentStep = 0;
 };
 
