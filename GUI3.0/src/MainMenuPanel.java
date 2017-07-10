@@ -69,4 +69,22 @@ public class MainMenuPanel extends JPanel {
 
         this.setVisible(true);
     }
+
+    public JButton getSaldoButton() {
+        return saldoOpvragen;
+    }
+    public JButton getBedragButton() { return bedragInvoeren; }
+    public JButton getBreekafButton() {
+        return breekaf;
+    }
+    public JButton get10Button() {
+        return snelpin10;
+    }
+    public JButton get20Button() {
+        return snelpin20;
+    }
+    public JButton get50Button() {
+        return snelpin50;
+    }
+
 }

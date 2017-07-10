@@ -5,19 +5,20 @@ import java.awt.*;
  * Created by Raber on 6/6/2017.
  */
 public class SaldoInfo extends JPanel {
-    private JButton breakaf;
+    private JButton breekaf;
     private JButton eigenBedrag;
     private JButton mainMenu;
 
     private JButton snelpin10;
     private JButton snelpin20;
     private JButton snelpin50;
-    
+
     private JLabel saldo;
     private JLabel uwsaldois;
     private JLabel background;
 
     public SaldoInfo(){
+
         this.setLayout(null);
         
         uwsaldois = new JLabel();
@@ -35,7 +36,7 @@ public class SaldoInfo extends JPanel {
         saldo.setText("300 Euro");
         saldo.setBounds(12, 300, 1890, 100);
         this.add(saldo);
-s
+
         eigenBedrag = new JButton("Eigen bedrag ");
         eigenBedrag.setBounds(1300, 463, 326, 74);
         this.add(eigenBedrag);
@@ -44,9 +45,9 @@ s
         mainMenu.setBounds(1300, 557, 326, 74);
         this.add(mainMenu);
 
-        breakaf = new JButton("Afbreken");
-        breakaf.setBounds(1300, 651, 326, 74);
-        this.add(breakaf);
+        breekaf = new JButton("Afbreken");
+        breekaf.setBounds(1300, 651, 326, 74);
+        this.add(breekaf);
 
         snelpin10 = new JButton("10 euros");
         snelpin10.setBounds(300, 463, 326,74);
@@ -74,5 +75,21 @@ s
 
     public JLabel getSaldo() {
         return saldo;
+    }
+    public JButton getMainMenuButton() {
+        return mainMenu;
+    }
+    public JButton getBedragButton() { return eigenBedrag;}
+    public JButton getBreekafButton() {
+        return breekaf;
+    }
+    public JButton get10Button() {
+        return snelpin10;
+    }
+    public JButton get20Button() {
+        return snelpin20;
+    }
+    public JButton get50Button() {
+        return snelpin50;
     }
 }

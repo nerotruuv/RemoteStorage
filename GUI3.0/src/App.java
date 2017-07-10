@@ -12,7 +12,7 @@ public class App {
             public void run() {
                 try {
                     PinProces pinproces = new PinProces();
-                  //  pinproces.start();
+                    pinproces.run();
 
                 } catch (Exception e) {
                     e.printStackTrace();
