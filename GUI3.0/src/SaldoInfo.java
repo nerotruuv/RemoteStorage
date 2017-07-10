@@ -35,7 +35,7 @@ public class SaldoInfo extends JPanel {
         saldo.setText("300 Euro");
         saldo.setBounds(12, 300, 1890, 100);
         this.add(saldo);
-s
+
         eigenBedrag = new JButton("Eigen bedrag ");
         eigenBedrag.setBounds(1300, 463, 326, 74);
         this.add(eigenBedrag);
